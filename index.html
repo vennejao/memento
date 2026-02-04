@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Memento22 | Coffee &amp; Cuts Chania&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Fonts: 'Cinzel' for the Roman/Statue vibe, 'Montserrat' for modern readability --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&amp;family=Montserrat:wght@300;400;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>colors: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>'neon-purple': '#b026ff',</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>'neon-cyan': '#00f3ff',</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>'deep-bg': '#0f0c29',</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>'mid-bg': '#302b63',</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>'light-bg': '#24243e',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>fontFamily: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>'display': ['Cinzel', 'serif'],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>'body': ['Montserrat', 'sans-serif'],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>backgroundImage: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>'vapor-gradient': 'linear-gradient(to right, #0f0c29, #302b63, #24243e)',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Custom Styles for the Parallax/Layering Effect */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0f0c29;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>perspective: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* The Giant Text Behind */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.big-text-back {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18vw;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Cinzel', serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: -webkit-linear-gradient(#eee, #333);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>-webkit-background-clip: text;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 10%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 0.8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: pulseText 4s infinite alternate;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* The Central Image (Statue) */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero-image {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 80vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>filter: drop-shadow(0 0 20px rgba(176, 38, 255, 0.6));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mask-image: linear-gradient(to bottom, black 80%, transparent 100%);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* The Text In Front (Overlay) */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.foreground-content {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 55%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.glass-bar {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(10px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: skewY(-2deg);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.neon-glow {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 0 0 10px #b026ff, 0 0 20px #b026ff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.neon-glow-cyan {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Palm Trees Background Animation (Subtle) */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.palms {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>bottom: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: url('https://images.unsplash.com/photo-1517639493569-5666a780fd6c?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80') center bottom no-repeat;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-size: cover;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mix-blend-mode: overlay;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes pulseText {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>from { opacity: 0.1; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>to { opacity: 0.3; text-shadow: 0 0 30px rgba(255,255,255,0.5); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card-hover:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-10px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 30px rgba(0, 243, 255, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: #00f3ff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="font-body selection:bg-neon-purple selection:text-white"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Navigation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur-md bg-black/30 border-b border-white/10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="text-2xl font-display font-bold tracking-widest text-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;i class="fa-solid fa-scissors text-neon-purple mr-2"&gt;&lt;/i&gt; MEMENTO&lt;span class="text-neon-cyan"&gt;22&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hidden md:flex space-x-8 text-sm font-bold tracking-widest"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#" class="hover:text-neon-cyan transition duration-300"&gt;CONCEPT&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#services" class="hover:text-neon-cyan transition duration-300"&gt;SERVICES&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#coffee" class="hover:text-neon-cyan transition duration-300"&gt;COFFEE BAR&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#book" class="hidden md:inline-block px-6 py-2 border border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-white transition duration-300 uppercase text-xs font-bold tracking-widest shadow-[0_0_15px_rgba(176,38,255,0.4)]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Book Chania</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- HERO SECTION --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="hero-container bg-vapor-gradient"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Vaporwave Grid/Palm Background --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="palms"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Layer 1: Background Text (Huge) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="big-text-back select-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>MEMENTO</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Layer 2: The Statue (Using a Classical Bust placeholder) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="https://images.unsplash.com/photo-1576504677598-49a46e15a514?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Classical Statue" class="hero-image grayscale contrast-125 brightness-75"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Layer 3: Foreground Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="foreground-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- The Purple Strip --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="glass-bar mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="container mx-auto flex justify-center space-x-4 md:space-x-12 text-xs md:text-sm uppercase tracking-[0.2em] font-bold text-white/90 transform skew-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;&lt;i class="fa-solid fa-mug-hot text-neon-cyan"&gt;&lt;/i&gt; Espresso Bar&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;•&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;&lt;i class="fa-solid fa-cut text-neon-purple"&gt;&lt;/i&gt; Master Barbers&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;•&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;&lt;i class="fa-solid fa-location-dot text-pink-500"&gt;&lt;/i&gt; Chania, Crete&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Foreground Big Text --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-6xl md:text-9xl font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 opacity-90 relative z-10" style="letter-spacing: -5px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>TWENTY&lt;span class="text-neon-purple neon-glow"&gt;22&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="mt-4 text-neon-cyan tracking-widest text-lg font-light uppercase"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Chania's First Coffee &amp; Barber Concept</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- FEATURES SECTION (Value Prop) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="services" class="py-20 relative bg-deep-bg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 relative z-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-neon-cyan font-bold tracking-widest text-sm mb-2"&gt;THE CONCEPT&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-4xl md:text-5xl font-display font-bold text-white"&gt;More Than Just A Haircut&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-24 h-1 bg-neon-purple mx-auto mt-4 shadow-[0_0_10px_#b026ff]"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Feature 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-8 border border-white/10 bg-white/5 backdrop-blur-sm transition duration-300 card-hover group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-5xl text-neon-purple mb-6 group-hover:scale-110 transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fa-solid fa-scissors"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-display font-bold mb-4"&gt;Precision Grooming&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-400 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Fades, beard sculpting, and hot towel shaves. Our barbers blend classical techniques with modern aesthetics.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Feature 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-8 border border-white/10 bg-white/5 backdrop-blur-sm transition duration-300 card-hover group transform md:-translate-y-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-5xl text-neon-cyan mb-6 group-hover:scale-110 transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fa-solid fa-mug-hot"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-display font-bold mb-4"&gt;Specialty Coffee&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-400 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Arrive early, stay late. Enjoy Chania's finest single-origin espresso or a cold brew while you wait or hang out.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Feature 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-8 border border-white/10 bg-white/5 backdrop-blur-sm transition duration-300 card-hover group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-5xl text-pink-500 mb-6 group-hover:scale-110 transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fa-solid fa-people-roof"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-display font-bold mb-4"&gt;The Community&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-400 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>A space designed for connection. Good music, retro vibes, and great conversation in the heart of Chania.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Background Elements --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="absolute top-1/2 left-0 w-64 h-64 bg-neon-purple rounded-full blur-[120px] opacity-20"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="absolute bottom-0 right-0 w-64 h-64 bg-neon-cyan rounded-full blur-[120px] opacity-20"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SOCIAL PROOF / TESTIMONIALS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="py-20 bg-black/50 border-t border-white/5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Visual Side --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                   </span>&lt;div class="absolute -inset-4 border-2 border-neon-purple opacity-50 transform translate-x-4 translate-y-4"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                   </span>&lt;img src="https://images.unsplash.com/photo-1503951914875-452162b7f30a?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Barber working" class="relative z-10 grayscale hover:grayscale-0 transition duration-500 w-full object-cover h-[400px]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Text Side --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fa-solid fa-quote-left text-4xl text-white/20 mb-6"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-3xl font-display font-bold mb-6 leading-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"Finally, a place in Chania where the coffee is as good as the fade. The vibe is unmatched."</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center space-x-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="w-12 h-12 rounded-full bg-gray-700 overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-full h-full object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="font-bold text-white"&gt;Nikos P.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-neon-cyan text-sm"&gt;Loyal Customer&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- STICKY CTA (Mobile &amp; Desktop) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="fixed bottom-6 right-6 z-50 animate-bounce"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#book" class="flex items-center justify-center w-16 h-16 rounded-full bg-neon-purple text-white shadow-[0_0_20px_#b026ff] hover:scale-110 transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;i class="fa-solid fa-calendar-check text-2xl"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- FOOTER / LOCATION --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="py-12 bg-[#050510] border-t border-white/10 text-center md:text-left"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-span-1 md:col-span-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-2xl font-display font-bold mb-4"&gt;MEMENTO&lt;span class="text-neon-purple"&gt;22&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-500 max-w-xs mx-auto md:mx-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Chania's premier destination for modern grooming and specialty coffee.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Est. 2023</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-white font-bold tracking-widest mb-4"&gt;HOURS&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul class="text-gray-500 space-y-2 text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Mon - Fri: 10:00 - 20:00&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Saturday: 10:00 - 18:00&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Sunday: Closed&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-white font-bold tracking-widest mb-4"&gt;FIND US&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-500 text-sm mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>123 Old Harbor Lane&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Chania, Crete 73100</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-center md:justify-start space-x-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#" class="text-white hover:text-neon-purple"&gt;&lt;i class="fa-brands fa-instagram text-xl"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#" class="text-white hover:text-blue-500"&gt;&lt;i class="fa-brands fa-facebook text-xl"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="mt-12 text-center text-gray-700 text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&amp;copy; 2023 Memento22. All rights reserved.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
